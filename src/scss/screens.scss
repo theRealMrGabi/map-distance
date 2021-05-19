@@ -1,0 +1,35 @@
+@mixin screen($size) {
+	@if ($size == "4k-large") {
+		@media screen and (max-width: 2560) {
+			@content;
+		}
+	}
+	@if ($size == "large") {
+		@media screen and (max-width: 1440px) {
+			@content;
+		}
+	}
+	@if ($size == "laptop") {
+		@media screen and (max-width: 1024px) {
+			@content;
+		}
+	}
+	@if ($size == "tablet") {
+		@media screen and (max-width: 768px) {
+			@content;
+		}
+	}
+	@if ($size == "medium") {
+		@media screen and (max-width: 425px) {
+			@content;
+		}
+	} @else if($size == "small") {
+		@media screen and (max-width: 375px) {
+			@content;
+		}
+	} @else if($size == "x-small") {
+		@media screen and (max-width: 320px) {
+			@content;
+		}
+	}
+}

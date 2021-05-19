@@ -1,0 +1,16 @@
+@import "./button.scss";
+@import "./color.scss";
+@import "./input.scss";
+@import "./screens.scss";
+
+.w90 {
+	width: 95%;
+}
+
+.form-error {
+	font-size: 1rem;
+	font-weight: 1rem;
+	color: red;
+	margin-left: auto;
+	margin-right: auto;
+}

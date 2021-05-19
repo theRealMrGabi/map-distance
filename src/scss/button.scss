@@ -1,0 +1,35 @@
+@import "./color.scss";
+
+.button {
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	align-items: center;
+	font-weight: 400;
+	border-width: 1px;
+	border-radius: 0.25rem;
+
+	&.primary {
+		background-color: $primary-100;
+		color: $white;
+
+		&:hover {
+			background-color: $primary-500;
+			color: $primary-100;
+			border-color: $primary-100;
+		}
+	}
+
+	&.secondary {
+		background-color: $white;
+		color: $primary-100;
+		border: 1px solid $primary-100;
+
+		&:hover {
+			background-color: $primary-500;
+			color: $white;
+			border-color: $primary-100;
+		}
+	}
+}
